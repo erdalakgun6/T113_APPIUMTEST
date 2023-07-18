@@ -11,7 +11,7 @@ import java.util.concurrent.TimeUnit;
 public class Driver {
     private static AndroidDriver appiumDriver;
 
-    static final String TELEFONADI="PIXEL 2";
+    static final String TELEFONADI="PIXEL2";
     static final String ANDROIDVERSION="10.0";
     static final String PLATFORM="Android";
     static final String OTOMASYON_ISMI="UiAutomator2";
@@ -33,7 +33,7 @@ public class Driver {
             caps.setCapability(MobileCapabilityType.AUTOMATION_NAME, OTOMASYON_ISMI);
             caps.setCapability("appPackage","com.dogan.arabam");
             caps.setCapability("appActivity","com.dogan.arabam.presentation.feature.home.HomeActivity");
-            caps.setCapability(MobileCapabilityType.NO_RESET,false); // true uygulama sifirlanmiyor onceki adimlari muhafaza ediyor
+            // caps.setCapability(MobileCapabilityType.NO_RESET,false); // true uygulama sifirlanmiyor onceki adimlari muhafaza ediyor
             //false ise her test baslangicinda sifirliyor
 
           if (ConfigReader.getProperty("platformName").equals("Android")) {

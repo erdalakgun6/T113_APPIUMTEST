@@ -1,6 +1,12 @@
 package tests;
 
+import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.android.AndroidElement;
+import org.testng.annotations.Test;
+import utilities.Driver;
+
 public class KiwiCom {
+    AndroidDriver<AndroidElement> driver = Driver.getAndroidDriver();
     // uygulamanin yuklendigi dogrulanir
     // uygulamanin basariyla acildigi dogrulanir
     // misafir olarak devam et e tiklanir
@@ -13,4 +19,14 @@ public class KiwiCom {
     // search butonuna tiklanir
     // en  ucuz ve aktarmasiz filtrelemeleri yapilir
     // gelen bilet fiyati kaydedilir ve kullanicin telefonuna sms olarak gonderilir
+    @Test
+    public void kiwiTest(){
+
+    }
+    @Test
+    public void kiwiTest2(){
+
+        System.out.println(driver.getDeviceTime());
+
+    }
 }
